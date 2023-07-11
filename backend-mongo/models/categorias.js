@@ -1,17 +1,17 @@
 import mongoose from "mongoose";
 
 const categoriasSchema = mongoose.Schema({
-        imagen: {
+        CategoriaNombre: {
             type: String,
             required: true,
             trim: true
         },
-        nombre:{
+        Descripcion:{
             type:String,
             required:true,
             trim:true
         },
-        descripcion:{
+        Imagen:{
             type:String,
             required:true,
             trim:true
@@ -23,4 +23,27 @@ const categoriasSchema = mongoose.Schema({
 );
 
 const Categoria = mongoose.model("Categoria", categoriasSchema);
+/* const clientessSchema = mongoose.Schema({
+    imagen: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    nombre:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    descripcion:{
+        type:String,
+        required:true,
+        trim:true
+    }
+},
+{
+    timestamps:true
+}
+);
+
+const Clientes = mongoose.model("Cliente", clientessSchema); */
 export default Categoria;
