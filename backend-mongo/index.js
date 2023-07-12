@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv"
+import cors from "cors"
 import conectarDB from "./config/config.js";
 import categoriaRouter from "./routes/categorias.routes.js";
 import clienteRouter from "./routes/clientes.routes.js";
@@ -7,7 +8,7 @@ import empleadoRouter from "./routes/empleados.routes.js";
 
 const app = express();
 dotenv.config();
-
+app.use(cors())
 const PORT = process.env.PORT
 
 conectarDB();
