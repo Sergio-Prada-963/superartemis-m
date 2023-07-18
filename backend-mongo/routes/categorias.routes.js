@@ -3,11 +3,11 @@ import {obtenerCategoria, agregarCategoria, borrarCategoria, actualizarCategoria
 
 const categoriaRouter = express.Router();
 
-categoriaRouter.get("/all", obtenerCategoria)
-categoriaRouter.post("/add", agregarCategoria)
-categoriaRouter.delete("/borrar/:id", borrarCategoria)
-categoriaRouter.patch("/actz/:id", actualizarCategorias)
-categoriaRouter.get("/oneCatg/:id", oneCategoria)
+categoriaRouter.get("/", obtenerCategoria)
+categoriaRouter.post("/", agregarCategoria)
+categoriaRouter.delete("/:id", borrarCategoria)
+categoriaRouter.patch("/:id", actualizarCategorias)
+categoriaRouter.get("/:id", oneCategoria)
 
 
 export default categoriaRouter;

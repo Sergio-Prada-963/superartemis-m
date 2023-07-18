@@ -3,10 +3,10 @@ import {obtenerclientes, agregarCliente, borrarCliente, actualizarCliente, oneCl
 
 const clienteRouter = express(Router);
 
-clienteRouter.get("/all", obtenerclientes);
-clienteRouter.post("/add", agregarCliente);
-clienteRouter.delete("/borrar/:id", borrarCliente);
-clienteRouter.patch("/actz/:id", actualizarCliente);
-clienteRouter.get("/oneClie/:id", oneCliente);
+clienteRouter.get("/", obtenerclientes);
+clienteRouter.post("/", agregarCliente);
+clienteRouter.delete("/:id", borrarCliente);
+clienteRouter.patch("/:id", actualizarCliente);
+clienteRouter.get("/:id", oneCliente);
 
 export default clienteRouter

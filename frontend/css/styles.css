@@ -5,7 +5,10 @@
 body{
     background: linear-gradient(100deg, rgba(77,167,233,1) 28%, rgba(255,255,255,1) 28%);
     height: 100vh;
+    background-size: 100% 100%;
     font-family: 'Kanit', sans-serif!important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     /* font-family: 'Roboto Slab', serif!important;
     font-family: 'Chela One', cursive!important;
     font-family: 'Ysabeau SC', sans-serif!important; */

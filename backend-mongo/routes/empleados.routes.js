@@ -3,11 +3,11 @@ import {obtenerEmpleados, agregarEmpleado, borrarEmpleado, actualizarEmpleado, o
 
 const empleadoRouter = express.Router();
 
-empleadoRouter.get("/all", obtenerEmpleados)
-empleadoRouter.post("/add", agregarEmpleado)
-empleadoRouter.delete("/borrar/:id",borrarEmpleado)
-empleadoRouter.patch("/actz/:id", actualizarEmpleado)
-empleadoRouter.get("/oneEmple/:id", oneEmpleado)
+empleadoRouter.get("/", obtenerEmpleados)
+empleadoRouter.post("/", agregarEmpleado)
+empleadoRouter.delete("/:id",borrarEmpleado)
+empleadoRouter.patch("/:id", actualizarEmpleado)
+empleadoRouter.get("/:id", oneEmpleado)
 
 
 export default empleadoRouter;

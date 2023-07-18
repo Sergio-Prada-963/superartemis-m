@@ -15,9 +15,9 @@ conectarDB();
 
 app.use(express.json());
 
-app.use("/categorias",categoriaRouter)
-app.use("/clientes", clienteRouter)
-app.use("/empleados", empleadoRouter)
+app.use("/api/categorias",categoriaRouter)
+app.use("/api/clientes", clienteRouter)
+app.use("/api/empleados", empleadoRouter)
 
 app.listen(PORT, ()=>{
     console.log(`running from port 3309`);
